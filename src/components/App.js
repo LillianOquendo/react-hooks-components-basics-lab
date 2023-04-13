@@ -17,14 +17,24 @@ function Home() {
 }
 
 {/* write an <About> component here */}
-
+//About is the 3rd component. It was not previously included for us
+//This function returns a div with an id of about
+function About(){
+  return (
+    <div id =  "about">
+      <h2>About</h2>
+      </div>
+  );
+}
+//The components listed in this return statement are the children of App
 
 function App() {
   return (
     <div>
-      <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
+      
+      <NavBar/>;
+      <Home/>;
+      <About/>
     </div>
   );
 }
